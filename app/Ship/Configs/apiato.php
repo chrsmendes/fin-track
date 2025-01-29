@@ -151,11 +151,8 @@ return [
         'use-etag' => false,
 
         'params' => [
-            // TODO: (BREAKING CHANGE) Use the config in fractal.php instead of here
-            // The key to use for the include request parameter
-            'include' => 'include',
-            // The key to use for the filter request parameter
-            'filter' => 'fieldset',
+            // TODO: BC: remove this after removing its usage in ResponseTrait in Core
+            'filter' => 'filter',
         ],
     ],
 
